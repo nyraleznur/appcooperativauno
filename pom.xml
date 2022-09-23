@@ -63,8 +63,7 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
-<<<<<<< HEAD
-=======
+
 			     <executions>
 					<execution>
 						<goals>
@@ -80,7 +79,7 @@
 						</configuration>
 					</execution>
 				 </executions>
->>>>>>> b9f4c4d (uhuuhuhu)
+
 			</plugin>
 		</plugins>
 	</build>
