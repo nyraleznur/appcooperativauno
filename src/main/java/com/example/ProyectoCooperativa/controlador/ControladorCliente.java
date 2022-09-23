@@ -34,7 +34,7 @@ public class ControladorCliente {
         return "index";
     }
 
-    @GetMapping("/cliente")
+    @GetMapping("cliente")
     public String listarclientes(Model modelo) {
         modelo.addAttribute("clientes",sic.listarClientes());
         return ("clientes");
@@ -46,7 +46,7 @@ public class ControladorCliente {
         return sic.consultaClientesPorId(id);
     }
 
-    @GetMapping("/cliente/nuevo")
+    @GetMapping("cliente/nuevo")
 
     public String formularioregistrocliente(Model modelo){
         modelo.addAttribute("clienteinsertar", new Cliente());
@@ -86,7 +86,7 @@ public class ControladorCliente {
    }*/
 
 
-    @GetMapping("/clientes/actualizar/{id}")
+    @GetMapping("clientes/actualizar/{id}")
     public String mostrarfrmeditarcliente(@PathVariable("id")String id,Model modelo){
         //clienterep.findById(id).get();
         Cliente cliente=sic.consultaClientesPorId(id);
