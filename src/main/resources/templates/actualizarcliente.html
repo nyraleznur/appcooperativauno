@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" th:href="@{/css/reset.css}">
+    <link rel="stylesheet" th:href="@{/css/stylessfrm.css}">
+</head>
+<body>
+
+<!--<form th:action="@{/cliente/guardar}" th:object="${clienteinsertar}" method="post" >
+
+    <input  type="text" th:field="*{documento}" placeholder="Documento">
+    <input  type="text" th:field="*{nombre}" placeholder="Nombre">
+    <input  type="text" th:field="*{apellido}" placeholder="Apellido">
+    <input  type="text" th:field="*{correo}" placeholder="Email">
+    <input  type="text" th:field="*{celular}" placeholder="Celular">
+    <input  type="submit" value="Registrar">
+
+
+
+</form>-->
+
+
+<!--<form th:action="@{/cliente/guardar}" th:object="${clienteinsertar}" method="post">
+
+    <input type="text" th:field="*{documento}" placeholder="Documento">
+    <input type="text" th:field="*{nombre}" placeholder="Nombre">
+    <input type="text" th:field="*{apellido}" placeholder="Apellido">
+    <input type="text" th:field="*{correo}" placeholder="Email">
+    <input type="text" th:field="*{celular}" placeholder="Celular">
+    <input type="submit" value="Registrareeeeeee">
+
+</form>-->
+
+<fieldset class="fi">
+    <legend>Actualizar cliente</legend>
+
+    <form th:action="@{/cliente/actualizar}" th:object="${clienteinsertar}" method="post" class="frm">
+
+        <label for="z">Documento
+            <input type="text"  th:field="*{documento}" id="z" required>
+        </label>
+
+        <label for="n">Nombre
+            <input type="text"  th:field="*{nombre}" id="n" placeholder="Nombre">
+        </label>
+
+        <label for="a">Apellido
+            <input type="text"  th:field="*{apellido}" id="a">
+        </label>
+
+        <label for="e">Correo
+            <input type="email"  th:field="*{correo}" id="e">
+        </label>
+
+        <label for="c">Celular
+            <input type="text" th:field="*{celular}" id="c">
+        </label>
+
+        <input type="submit" value="Registrarse">
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
